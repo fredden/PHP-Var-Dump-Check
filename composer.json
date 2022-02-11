@@ -24,5 +24,17 @@
     "bin": ["var-dump-check"],
     "replace": {
         "jakub-onderka/php-var-dump-check": "*"
+    },
+    "scripts" : {
+        "phpunit": [
+            "@php ./vendor/phpunit/phpunit/phpunit --no-coverage"
+        ],
+        "coverage": [
+            "@php ./vendor/phpunit/phpunit/phpunit"
+        ]
+    },
+    "scripts-descriptions": {
+        "phpunit": "PHP unit",
+        "coverage": "PHP unit with code coverage"
     }
 }

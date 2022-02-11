@@ -48,7 +48,7 @@ jobs:
         run: ./vendor/bin/parallel-lint --exclude vendor . --exclude git . --checkstyle | cs2pr
 
       - name: 'Run unit tests'
-        run: ./vendor/bin/phpunit
+        run: composer phpunit
 
       - name: 'Check var dump on own code'
         run: ./var-dump-check src
