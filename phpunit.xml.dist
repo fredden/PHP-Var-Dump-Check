@@ -1,18 +1,21 @@
-<phpunit bootstrap="tests/bootstrap.php"
-         backupGlobals="false"
-         backupStaticAttributes="false"
-         colors="true"
-         convertDeprecationsToExceptions="true"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
-         processIsolation="false"
-         stopOnFailure="false"
->
+<?xml version="1.0"?>
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
+    bootstrap="tests/bootstrap.php"
+    backupGlobals="false"
+    backupStaticAttributes="false"
+    colors="true"
+    convertDeprecationsToExceptions="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    processIsolation="false"
+    stopOnFailure="false">
+
     <testsuites>
         <testsuite name="Default tests">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
-
 </phpunit>
