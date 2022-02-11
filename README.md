@@ -82,3 +82,4 @@ or setting for ANT:
 [![Build Status](https://github.com/php-parallel-lint/PHP-Var-Dump-Check/actions/workflows/test.yml/badge.svg)](https://github.com/php-parallel-lint/PHP-Var-Dump-Check/actions/workflows/test.yml)
 [![Downloads this Month](https://img.shields.io/packagist/dm/php-parallel-lint/php-var-dump-check.svg)](https://packagist.org/packages/php-parallel-lint/php-var-dump-check)
 [![Latest stable](https://img.shields.io/packagist/v/php-parallel-lint/php-var-dump-check.svg)](https://packagist.org/packages/php-parallel-lint/php-var-dump-check)
+[![Coverage Status](https://coveralls.io/repos/github/php-parallel-lint/php-var-dump-check/badge.svg?branch=master)](https://coveralls.io/github/php-parallel-lint/php-var-dump-check?branch=master)
