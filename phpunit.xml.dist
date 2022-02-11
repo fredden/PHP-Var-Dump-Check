@@ -1,17 +1,31 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <phpunit
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
-    bootstrap="tests/bootstrap.php"
-    backupGlobals="false"
-    backupStaticAttributes="false"
-    colors="true"
-    convertDeprecationsToExceptions="true"
-    convertErrorsToExceptions="true"
-    convertNoticesToExceptions="true"
-    convertWarningsToExceptions="true"
-    processIsolation="false"
-    stopOnFailure="false">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.2/phpunit.xsd"
+        backupGlobals="true"
+        beStrictAboutTestsThatDoNotTestAnything="true"
+        bootstrap="./vendor/autoload.php"
+        colors="true"
+        convertDeprecationsToExceptions="true"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        forceCoversAnnotation="true"
+        stopOnFailure="false"
+        verbose="true"
+>
+
+    <testsuites>
+        <testsuite name="PHP-Var-Dump-Check">
+            <directory suffix="Test.php">tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
 
     <logging>
         <log type="coverage-clover" target="build/logs/clover.xml"/>
@@ -19,9 +33,7 @@
         <log type="coverage-text" target="php://stdout" showOnlySummary="true"/>
     </logging>
 
-    <testsuites>
-        <testsuite name="Default tests">
-            <directory>tests</directory>
-        </testsuite>
-    </testsuites>
+    <php>
+        <ini name="memory_limit" value="256M"/>
+    </php>
 </phpunit>
