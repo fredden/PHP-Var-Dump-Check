@@ -24,5 +24,8 @@
     "bin": ["var-dump-check"],
     "replace": {
         "jakub-onderka/php-var-dump-check": "*"
+    },
+    "config": {
+        "lock": false
     }
 }
